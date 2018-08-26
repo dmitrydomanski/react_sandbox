@@ -11,7 +11,10 @@ const orderSummary = (props) => {
         });
     return (
         <Aux>
-            <h3> Your order </h3>
+            <div style={{width: '100%', display: 'inline-flex', justifyContent: 'space-between'}}> 
+                <h3> Your order </h3>
+            <p><strong>Total Price: {props.price}</strong></p>
+            </div>
             <p> burger you've ordered contains: </p>
             <ul>
                 {ingridientsSummary}
