@@ -6,7 +6,7 @@ import Aux from '../Aux/Aux';
 
 const withErrorHandler = (WrappedComponent, axios) => {
 
-    console.log(axios.interceptors);
+    // console.log(axios.interceptors);
 
     return class extends Component {
         state = {
